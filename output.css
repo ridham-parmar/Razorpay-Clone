@@ -1,0 +1,160 @@
+/* Razorpay css main code */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  }
+  
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .companies-logo {
+    animation: image-move 20s infinite linear;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 76px solid transparent;
+    border-right: 64px solid transparent;
+    border-bottom: 162px solid #fff;
+    transform: rotate(227deg);
+    position: absolute;
+    top: 8px;
+    right: 50px;
+  }
+  
+  .triangle-2 {
+     width: 0;
+    height: 0;
+    border-left: 76px solid transparent;
+    border-right: 64px solid transparent;
+    border-bottom: 162px solid #181c2e;
+    transform: rotate(227deg);
+    position: absolute;
+    top: 8px;
+    right: 50px; 
+  }
+  
+  .x-flame {
+    transform: rotateX(180deg);
+  }
+  
+  
+  @keyframes image-move {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-800px);
+    }
+  }
+  
+  .first-gradient {
+    background-image: linear-gradient(180deg, #f4f8ff, #fff0);
+  }
+  
+  .second-gradient {
+    background-image: linear-gradient(0deg, #f4f8ff, #fff0);
+  }
+  
+  .learn-more {
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  @media (max-width:1244px) {
+    .hero-sec-img {
+        max-width: 600px;
+        transition: all 200ms;
+    }    
+  }
+  
+  @media (min-width:1160px) {
+    .nav-bar-items {
+        display: flex;
+        visibility: visible;
+        transition: all 200ms;
+    }
+    .flag {
+        display: block;
+    }
+    .sign-up-btn {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+  }
+  
+  @media (min-width:1110px) {
+    .know-more {
+        padding-top: 1.5rem;
+    }
+  }
+  
+  @media (max-width:1040px) {
+    .sec-3-bottom {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width:550px) {
+    @keyframes image-move {
+        0% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(-660px);
+        }
+    }
+  }
+  @media (max-width:500px) {
+    @keyframes image-move {
+        0% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(-500px);
+        }
+    }
+  }
+  
+  @media (max-width:480px) {
+    .header-bar {
+        font-size: 12px;
+        /* transition: all 300ms; */
+        margin-right: -1rem;
+    }
+    .sec-3-card {
+        stroke: none;
+        filter: drop-shadow(2px 2px 22px rgba(0,0,0,0.3));
+    } 
+  }
+  @media (max-width:500px) {
+    @keyframes image-move {
+        0% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(-373px);
+        }
+    }
+  }
+  
+  @media (min-width:340px) {
+    .card-sec {
+        margin-top: 90px;
+    }
+  }
+  
